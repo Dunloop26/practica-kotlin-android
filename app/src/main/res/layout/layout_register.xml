@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="50dp"
+    android:background="@drawable/rounded_box_shadow"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:fontFamily="@font/ibm_plex_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Nombre estudiante"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="26sp"
+            android:fontFamily="@font/quicksand"
+            android:textFontWeight="800"
+            android:text="Nota" />
+
+        <TextView
+            android:id="@+id/tvDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+
+            android:fontFamily="@font/ibm_plex_sans"
+            android:text="Documento" />
+    </LinearLayout>
+
+
+</LinearLayout>

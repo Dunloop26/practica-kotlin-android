@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:fontFamily">@font/ibm_plex_sans_medium</item>
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryVariant">@color/orange_700</item>
+        <item name="colorPrimaryDark">@color/orange_300</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cyan_500</item>
+        <item name="colorSecondaryVariant">@color/cyan_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Fullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Custom.Button">
+        <item name="android:radius">250dp</item>
+        <item name="android:background">@drawable/rounded_primary_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="Custom.Button.Outline" parent="Custom.Button">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:foreground">@drawable/outline_rounded</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="Custom">Custom</style>
+    <style name="Custom.Heading">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Custom.Heading.Sub">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Custom.FloatingButton">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:background">@drawable/drop_shadow_circle</item>
+        <item name="android:scaleType">fitXY </item>
+        <item name="android:padding">26dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        style="@style/Custom.Heading"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        tools:itemCount="0"/>
+
+    <FrameLayout
+        android:id="@+id/emptyFrame"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Custom.Heading.Sub"
+            android:gravity="center"
+            android:text="@string/no_registers"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/floating_button_add"
+        style="@style/Custom.FloatingButton"
+        android:src="@drawable/ic_outline_person_add_24"
+        app:tint="@color/orange_700"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
